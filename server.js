@@ -1,6 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const dbConfig = require("./app/config/db.config");
+const dotenv = require("dotenv");
+dotenv.config({   default_node_env: "development",   silent: true, });
 
 const app = express();
 
@@ -20,7 +22,7 @@ const db = require("./app/models");
 const Role = db.role;
 
 db.mongoose
-  .connect(`mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`, {
+  .connect(`${process.env.MONGO_METHOD}://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_CLUSTER}/${process.env.MONGO_DB}?${process.env.MONGO_OPTIONS}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
