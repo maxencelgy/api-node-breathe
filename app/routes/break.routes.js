@@ -11,8 +11,7 @@ module.exports = function (app) {
     });
 
     app.get("/api/break/all", controller.getAll);
-
-    // app.get("/api/break/:id", controller.getOne);
-
+    app.get("/api/break/:id", controller.findOne);
     app.post("/api/break/create", controller.create);
+    app.delete("/api/break/delete/:id", controller.delete);
 };
