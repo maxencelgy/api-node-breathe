@@ -4,7 +4,13 @@ const User = mongoose.model(
   "User",
   new mongoose.Schema({
     username: String,
+    name: String,
+    firstname: String,
+    age: Number,
+    userEmotions: Array,
+    breakId: Array,
     email: String,
+
     password: String,
     roles: [
       {
