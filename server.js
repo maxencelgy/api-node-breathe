@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const dbConfig = require("./app/config/db.config");
 const dotenv = require("dotenv");
-dotenv.config({   default_node_env: "development",   silent: true, });
+dotenv.config({   default_node_env: "production",   silent: true, });
 
 const app = express();
 
