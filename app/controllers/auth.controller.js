@@ -37,7 +37,7 @@ exports.signup = (req, res) => {
                             return;
                         }
 
-                        res.send({message: "User was registered successfully!"});
+                        res.send({message: "User was registered successfully!", user: user.accessToken});
                     });
                 }
             );
@@ -55,7 +55,7 @@ exports.signup = (req, res) => {
                         return;
                     }
 
-                    res.send({message: "User was registered successfully!"});
+                    res.send({message: "User was registered successfully!", user: user.accessToken});
                 });
             });
         }
