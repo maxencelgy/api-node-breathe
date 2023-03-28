@@ -6,6 +6,7 @@ const Sound = mongoose.model(
         title: String,
         description: String,
         url: String,
+        urlImg: String,
         created_at: Date,
         updated_at: Date,
     })

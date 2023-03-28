@@ -20,7 +20,8 @@ exports.create = (req, res) => {
     const sound = new Sound({
         title: req.body.title,
         description: req.body.description,
-        url: req.body.url
+        url: req.body.url,
+        urlImg: req.body.urlImg
     });
 
     sound.save(sound)
