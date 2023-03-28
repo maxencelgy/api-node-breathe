@@ -21,7 +21,9 @@ exports.create = (req, res) => {
         title: req.body.title,
         description: req.body.description,
         url: req.body.url,
-        urlImg: req.body.urlImg
+        urlImg: req.body.urlImg,
+        category: req.body.category,
+        time: req.body.time,
     });
 
     sound.save(sound)
