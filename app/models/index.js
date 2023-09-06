@@ -11,6 +11,7 @@ db.break = require("./break.model");
 db.exercices = require("./exercises.model");
 db.emotions = require("./emotions.model");
 db.sound = require("./sound.model");
+db.classe = require("./classe.model");
 
 db.ROLES = ["user", "admin", "moderator"];
 
