@@ -5,7 +5,6 @@ const Classe = mongoose.model(
     new mongoose.Schema({
         title: String,
         personnes: String,
-        time: String,
     })
 );
 

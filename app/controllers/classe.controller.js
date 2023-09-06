@@ -21,7 +21,6 @@ exports.create = (req, res) => {
     const classes = new Classe({
         title: req.body.title,
         personnes: req.body.personnes,
-        time: req.body.temps,
     });
 
     classes.save(classes)

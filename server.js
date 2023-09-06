@@ -47,6 +47,7 @@ require("./app/routes/break.routes")(app);
 require("./app/routes/exercices.routes")(app);
 require("./app/routes/emotions.routes")(app);
 require("./app/routes/sound.routes")(app);
+require("./app/routes/classe.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
