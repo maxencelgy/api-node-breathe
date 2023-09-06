@@ -11,7 +11,8 @@ module.exports = function (app) {
     });
 
     app.get("/api/classe/all", controller.getAll);
-    app.get("/api/classe/:id", controller.findOne);
+    app.get("/api/classe/:title", controller.findOne);
     app.post("/api/classe/create", controller.create);
+    app.put("/api/classe/update/:id", controller.update);
     app.delete("/api/classe/delete/:id", controller.delete);
 };
